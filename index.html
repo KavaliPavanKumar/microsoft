@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+
+    <title></title>
+    
+    <style type="text/css">
+      ul
+      {
+        float:left;
+        list-style-type: none;
+      }
+      a
+      {
+        text-decoration: none;
+        color: black;
+      }
+      li a:hover,h5 b:hover
+      {
+        text-decoration: none;
+        color:white;
+      }
+      .col-md-5,.col-md-2,.col-md-3
+      {
+        margin-top: 15px;
+      }
+      h5
+      {
+        font-size: medium;
+      }
+      .col-md-3:hover
+      {
+        background-color: honeydew;
+        transition-duration: 0.5s;
+        transform: scale(1.1); 
+        border-radius: 16px;
+        box-shadow: 0 10px 6px -6px black;
+      }
+
+
+
+/*-------------------------------------------------CM Message Section Css Starts Here-------------------------------------------------*/
+
+#cm-wrapper
+{
+	width: 100%;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	background: #63c5da;
+}
+
+.cm-block
+{
+	padding: 20px 0 25px 0;
+	width: 1007px;
+	margin: 0 auto;
+}
+
+.cm
+{
+	padding: 15px 5px 15px 5px;
+	margin: 0 0 0 0;
+	border-bottom: 1px dotted #FFFFFF;
+	width: 1007px;	
+	float: left;
+}
+
+.cm .pic
+{
+	width: 90px;
+	float: left;
+	margin: 0 0 0 0;
+	padding: 10px 0 0 0;
+}
+
+.cm .text
+{
+	width: 900px;
+	float: left;
+	margin: 0 0 0 10px;
+	padding: 0 0 0 0;
+}
+
+.cm .text h1
+{
+	font-family: Arial;
+	font-size: 15px;
+	font-weight: bold;
+	color: #f2f0f1;
+	text-transform: none;
+	text-decoration: none;
+	text-align: left;
+	display: block;
+}
+
+.cm .text p
+{
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: normal;
+	color: #f1f1f1;
+	text-transform: none;
+	text-decoration: none;
+	text-align: justify;
+	display: block;
+}
+
+.cm .text p a
+{
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: normal;
+	color: #f1f1f1;
+	text-transform: none;
+	text-decoration: underline;
+}
+
+.cm .text p a:hover
+{
+	color: #f1f1f1;
+	text-decoration: none;
+}
+
+.cm .text .readmore
+{
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: normal;
+	color: #f1f1f1;
+	text-transform: none;
+	text-decoration: none;
+	text-align: right;
+	display: block;
+}
+
+.cm .text .readmore a
+{
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: normal;
+	color: #d8d6d7;
+	text-transform: none;
+	text-decoration: none;
+	text-align: right;
+}
+
+.cm .text .readmore a:hover
+{
+	color: #d8d6d7;
+	text-decoration: underline;
+}
+
+
+
+    </style>
+
+    <script type="text/javascript" src="../js/time.js"></script>
+
+    
+
+  </head>
+
+  <body style="background-color: #c3e3e8;" onload="displayTime();">
+    
+	  <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+	  <link rel="stylesheet" type="text/css" href="../css/index.css">
+               
+
+
+
+    <!-- .....................................  Header codes start here  ................................................... -->
+
+    <?php
+    include ('../includes/header.php') ;
+  ?>
+<!-- .............................................  Header codes end here ..................................................... -->
+ 
+ </div> <!-- ap-container -->
+            </div> <!-- top-header -->
+            <div style="display: inline-flex; background:#2979ff none repeat scroll 0 0; height: 35px; width:100%; margin-bottom:2px;">
+                <div style="width: 10%; font-size: 14px; color:#fff; background-color: #DD1274; font-weight:bold; padding: 8px 12px;">LATEST NEWS</div>
+                <div style="font-size: 16px; padding: 6px 0px; width:90%; color:#fff; background-color: #63c5da; ">
+					<marquee scrollamount="3.5" scrolldelay="1" onMouseOver="this.stop()" onMouseOut="this.start()" direction="left">
+                    <ul>						  <li style="display: inline-block; color: #fff;">
+							&nbsp;&nbsp;&nbsp;<span style="color:#fff; font-weight: bold;">1 .</span>&nbsp;<span></span>&nbsp;&nbsp;<a style="color: #fff; font-weight: bold; text-decoration: none; font-size: 20px; line-height: 16px;" href="#">HealthBook New Update&nbsp;&nbsp;<img src="#" style="vertical-align: baseline;"></a>
+</li>		      
+</ul></marquee>
+</div>
+</div>
+<!-- Developer Message Section Starts Here -->
+	<div id="cm-wrapper" background:#2979ff>
+	<div class="cm-block">
+		<marquee behavior="scroll" scrollamount="1.5" height="150px" onmouseover="this.stop();" onmouseout="this.start();" direction="up" loop="-1" background:#2979ff>
+			<div class="cm">
+				<div class="pic">
+					<! -- <img src="" width="82px" height="89px" /> 
+				</div>
+				<div class="text">
+					<h1>DEVELOPER'S MESSAGE</h1>
+					<p><strong>"HEALTHBOOK DEVELOPMENT IS OUR DREAM"</strong><br />The proposed software product is the HealthBook. .</p>
+					<p>This System will be used in any hospital,clinic,dispensory or pathology labs.Clinic, dispensary or pathology to get the information from the patients andd then storing the data for future usages.</p>
+					<p>This system will be included with the nearby hospitals , labs ,diagnosis centers and the nearby ambulance serrvices.</p>
+					<p>By using this system the health records can be maintained efficiently and securely.</p>
+					<p><strong>R Nagi Reddy,KEC<br />Founder & Developer</strong></p>
+				</div>
+				<div class="clear-both"></div>
+			</div>
+		</marquee>
+		<div class="clear-both"></div>
+	</div>	</div>
+</div><!--Developer  Message Section Ends Here -->
+<br>
+<br>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3" onclick="location.href='patient.html'">
+          <div class="thumbnail tk"><img src="../images/patient1.png"></div><br>
+          <h4>Patient</h4>
+          <p>Finding your disease or is quick appointment. Create your solutions.</p>
+          <a href="#" class="readmore">View Details</a><hr>
+        </div><!-- end of col-md-4 -->
+
+        <div class="col-md-3" onclick="location.href='doctor.php'">
+          <div class="thumbnail tk"><img src="../images/doctor1.png"></div><br>
+          <h4>Doctor</h4>
+          <p>We manually validate every patient to ensure you the best.</p>
+          <a href="#" class="readmore">View Details</a><hr>
+        </div><!-- end of col-md-4 -->
+
+        <div class="col-md-3" onclick="location.href='stakeholder.html'">
+          <div class="thumbnail tk"><img src="../images/stakeholder.png"></div><br>
+          <h4>Stakeholder</h4>
+          <p>We manually provided every human to ensure insurance best.</p>
+          <a href="#" class="readmore">View Details</a><hr>
+        </div><!-- end of col-md-4 -->
+
+        <div class="col-md-3" onclick="location.href='hospitallogin.php'">
+          <div class="thumbnail tk"><img src="../images/hospital.png"></div><br>
+          <h4>Hospital</h4>
+          <p>Our dedicated service team help to you every step of the way.</p>
+          <a href="#" class="readmore">View Details</a><hr>
+        </div><!-- end of col-md-4 -->
+      </div><!--end of row--><br><br>
+    
+  
+<div class="container">
+      <div class="row">
+<div class="col-md-3" onclick="location.href='#'">
+          <div class="thumbnail tk"><img src="../images/medical.jpg" width="70" height="70"></div><br>
+          <h4>Medical stores</h4>
+          <p>Medical stores login for medicine distribution.</p>
+          <a href="medicalstore.html" class="readmore">View Details</a><hr>
+        </div><!-- end of col-md-4 -->
+   
+
+<div class="col-md-3" onclick="location.href='#'">
+          <div class="thumbnail tk"><img src="../images/lab.jpg" width="70" height="70"></div><br>
+          <h4>Laboratories</h4>
+          <p>Laboratories for disease identification and blood check ups.</p>
+          <a href="#" class="readmore">View Details</a><hr>
+        </div><!-- end of col-md-4 -->
+<div class="col-md-3" onclick="location.href='#'">
+          <div class="thumbnail tk"><img src="../images/chat.png" width="70" height="70"></div><br>
+          <h4>Chat Rooms</h4>
+          <p>Chat with the community to know more.</p>
+          <a href="../chat/" class="readmore">View Details</a><hr>
+        </div><!-- end of col-md-4 -->
+<div class="col-md-3" onclick="location.href='#'">
+          <div class="thumbnail tk"><img src="../images/foodm.jpg" width="70" height="70"></div><br>
+          <h4>Food Medicine</h4>
+          <p>Different food used for different Disesses</p>
+          <a href="https://www.healthline.com/nutrition/food-as-medicine" class="readmore">View Details</a><hr>
+        </div><!-- end of col-md-4 -->
+    </div>
+      </div><!--end of row--><br><br>
+
+<div class="container"><div class="row"> 
+<p style="background-color: grey; color: #f1f1f1; font-weight: bold">
+      Quick Explore Nearby locations...
+</p>
+</div><!--end of row--><br><br>
+<div class="container">
+      <div class="row">
+<div class="col-md-3" onclick="location.href='#'">
+          <div class="thumbnail tk"><img src="../images/nearbyh.png" width="70" height="70"></div><br>
+          <h4>Hospitals</h4>
+          <p>Find the hospitals in  your locality and explore.</p>
+          <a href="https://www.google.co.in/maps/search/nearby+hospitals/" class="readmore">Show</a><hr>
+        </div><!-- end of col-md-4 -->
+
+<div class="col-md-3" onclick="location.href='#'">
+          <div class="thumbnail tk"><img src="../images/nearbym.jpg" width="70" height="70"></div><br>
+          <h4>Pharmacies</h4>
+          <p>Find nearby medical stores and pharmacies
+ </p>
+          <a href="https://www.google.co.in/maps/search/medical+stores+near+me/" class="readmore">Show</a><hr>
+        </div><!-- end of col-md-4 -->
+
+<div class="col-md-3" onclick="location.href='#'">
+          <div class="thumbnail tk"><img src="../images/nearbyd.png" width="70" height="70"></div><br>
+          <h4>Diagnosis centers </h4>
+          <p>Find nearby diagnosis centers MRI,X ray
+ </p>
+          <a href="https://www.google.co.in/maps/search/diagnosis+centersnear+me/" class="readmore">Show</a><hr>
+        </div><!-- end of col-md-4 -->
+
+<div class="col-md-3" onclick="location.href='#'">
+          <div class="thumbnail tk"><img src="../images/nearbya.jpg" width="70" height="70"></div><br>
+          <h4>Ambulance Services</h4>
+          <p>Find nearby ambulance services in emergencies
+ </p>
+          <a href="https://www.google.co.in/maps/search/ambulance+services+near+me/" class="readmore">Show</a><hr>
+        </div><!-- end of col-md-4 -->
+</div><!--end of row--><br><br>
+</div>
+</div>
+</div>
+</div></div>
+<br>
+<br>
+
+    <link rel="stylesheet" type="text/css" href="css/footer.css"  />
+    
+    <!-- ..................................  Footer-Section starts here .............................................. -->
+
+    <?php
+    include ('../includes/footer.php') ;
+  ?>
+
+    <!-- ........................................  Footer-Section ends here  ......................................... -->
+
+
+
+  </body>
+</html>
